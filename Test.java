@@ -17,6 +17,11 @@ public class Test
             while(sc.hasNext()){
                 String word = sc.nextLine();
                 System.out.println(word);
+                StringTokenizer st = new StringTokenizer(word," ");
+                for (int i = 0 ; i < 2; i++){
+                    String token = st.nextToken();
+                    System.out.println(token);
+                }
             }
         }catch(IOException e){
             System.out.println("시스템 오류입니다. ");
