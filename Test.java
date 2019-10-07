@@ -4,7 +4,7 @@ import java.io.*;
  * 여기에 Test 클래스 설명을 작성하십시오.
  * 
  * @author (2014671038 김진수, 2017605038 스피겔 크릴) 
- * @version (2014671038 김진수)
+ * @version (20191007)
  */
 public class Test
 {
@@ -18,10 +18,10 @@ public class Test
                 String word = sc.nextLine();
                 System.out.println(word);
                 StringTokenizer st = new StringTokenizer(word," ");
-                for (int i = 0 ; i < 2; i++){
-                    String token = st.nextToken();
-                    System.out.println(token);
-                }
+                String key = st.nextToken();
+                int val = Integer.parseInt(st.nextToken());
+                h.put(key,val);
+                System.out.println(h);
             }
         }catch(IOException e){
             System.out.println("시스템 오류입니다. ");
